@@ -1,0 +1,16 @@
+
+.posts .blog-post {
+  padding:1em;
+/*  background-color: #ccc; */
+  border-right: 0.25em solid #995555;
+  border-bottom: 0.25em solid #995555;
+}
+
+body {
+  background-color: #ffdeaa;
+}
+
+h1,h2,h3,h4,h4 {
+  color: #551111;
+}
+
