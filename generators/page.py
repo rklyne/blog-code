@@ -27,13 +27,6 @@ class PageGenerator(object):
         out.write(self.FOOTER)
         return out.getvalue()
 
-    def read_content(self, content):
-        headers = {}
-        while content.startswith("#!"):
-            header, content = content.split("\n", 1)
-            header_name, header_value = header[2:].split("=",1)
-            headers[header_name] = header_value
-        return headers, content
     def get_title(self):
         return self.name
 
