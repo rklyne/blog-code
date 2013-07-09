@@ -6,7 +6,7 @@ class SiteGenerator(object):
   def regenerate(self):
     import os
     from generators import StaticGenerator, BlogGenerator
-    blog = BlogGenerator(os.path.join(self.src, 'posts'), os.path.join(self.dest, 'blog'))
+    blog = BlogGenerator(os.path.join(self.src, 'posts'), os.path.join(self.dest, 'blog'), '/blog/')
     blog.regenerate()
     static = StaticGenerator(os.path.join(self.src, 'static'), self.dest)
     static.regenerate()

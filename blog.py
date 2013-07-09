@@ -25,6 +25,9 @@ def main(args):
     import generators
     generator = generators.SiteGenerator(find_path('data'), find_path('htdocs'))
     generator.regenerate()
+  elif command == 'spike':
+    import spike
+    spike.test()
   else:
     print "Unknown command ", command
     return
